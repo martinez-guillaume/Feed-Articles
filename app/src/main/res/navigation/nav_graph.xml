@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.feedarticlesjetpack.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.feedarticlesjetpack.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false"/>
+
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.feedarticlesjetpack.ui.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.feedarticlesjetpack.ui.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_creaArticleFragment"
+            app:destination="@id/creaArticleFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_editArticleFragment"
+            app:destination="@id/editArticleFragment">
+            <argument
+                android:name="articleId"
+                app:argType="long" />
+        </action>
+        <action
+            android:id="@+id/action_mainFragment_to_detailsArticleFragment"
+            app:destination="@id/detailsArticleFragment">
+            <argument
+                android:name="articleId"
+                app:argType="long" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/creaArticleFragment"
+        android:name="com.example.feedarticlesjetpack.ui.creaArticle.CreaArticleFragment"
+        android:label="fragment_crea_article"
+        tools:layout="@layout/fragment_crea_article" />
+    <action
+        android:id="@+id/action_creaArticleFragment_to_mainFragment"
+        app:destination="@id/mainFragment" />
+
+
+    <fragment
+        android:id="@+id/editArticleFragment"
+        android:name="com.example.feedarticlesjetpack.ui.editArticle.EditArticleFragment"
+        android:label="fragment_edit_article"
+        tools:layout="@layout/fragment_edit_article" />
+    <action
+        android:id="@+id/action_editArticleFragment_to_mainFragment"
+        app:destination="@id/mainFragment" />
+
+
+    <fragment
+        android:id="@+id/detailsArticleFragment"
+        android:name="com.example.feedarticlesjetpack.ui.detailsArticle.DetailsArticleFragment"
+        android:label="DetailsArticleFragment">
+        <argument
+            android:name="articleId"
+            app:argType="long" />
+    </fragment>
+
+</navigation>

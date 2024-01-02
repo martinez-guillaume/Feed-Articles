@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FeedArticlesJetpack</string>
+    <string name="hello_blank_fragment">Bonjour fragment vierge</string>
+    <string name="tv_titlePage_details_article_fragment">Détails Article</string>
+    <string name="tv_create_text_details_article_fragment">Créé le </string>
+    <string name="iv_star_details_article_fragment">étoile</string>
+    <string name="tv_category_text_details_article_fragment">Catégorie : </string>
+    <string name="iv_details_article_fragment">url</string>
+    <string name="btn_back_details_article_fragment">Retour</string>
+    <string name="tv_titlePage_create_article_fragment">Nouvel Article</string>
+    <string name="et_title_crea_article_fragment">Titre</string>
+    <string name="et_content_text_crea_article_fragment">Contenu</string>
+    <string name="et_picture_crea_article_fragment">URL de l\'image</string>
+    <string name="iv_crea_article_fragment">Logo Feed Articles</string>
+    <string name="rb_sport_crea_article_fragment">Sport</string>
+    <string name="rb_manga_crea_article_fragment">Manga</string>
+    <string name="rb_diverse_crea_article_fragment">Divers</string>
+    <string name="btn_submit_crea_article_activity">Enregistrer</string>
+    <string name="tv_titlePage_edit_fragment">Edition Article</string>
+    <string name="et_url_edit_fragment">Image URL</string>
+    <string name="iv_edit_fragment">Logo Feed Articles</string>
+    <string name="rb_sport_edit_fragment">Sport</string>
+    <string name="rb_manga_edit_fragment">Manga</string>
+    <string name="rb_diverse_edit_fragment">Divers</string>
+    <string name="btn_delete_edit_fragment">Supprimer</string>
+    <string name="btn_submit_edit_fragment">Mettre à jour</string>
+    <string name="tv_titlePage_login_fragment">Connectez-vous</string>
+    <string name="et_login_login_fragment">Login</string>
+    <string name="et_password_login_fragment">Password</string>
+    <string name="btn_submit_login_fragment">Se connecter</string>
+    <string name="tv_register_login_fragment">Pas de compte ? Inscrivez-vous !</string>
+    <string name="iv_add_main_fragment">Ajouter</string>
+    <string name="iv_star_main_fragment">Étoile</string>
+    <string name="iv_logout_main_fragment">Déconnexion</string>
+    <string name="rb_all_main_fragment">Tout</string>
+    <string name="rb_sport_main_fragment">Sport</string>
+    <string name="rb_manga_main_fragment">Manga</string>
+    <string name="rb_diverse_main_fragment">Divers</string>
+    <string name="tv_titlePage_register_fragment">Nouveau Compte</string>
+    <string name="et_login_register_fragment">Login</string>
+    <string name="et_password_register_fragment">Password</string>
+    <string name="et_confirm_password_register_fragment">Confirmation Password</string>
+    <string name="btn_submit_register_fragment">S\'inscrire</string>
+    <string name="iv_splash_fragment">Logo Feed Articles</string>
+    <string name="tv_title_splash_fragment">Feed Articles</string>
+    <string name="picture_item_rv">Image de l\'annonce</string>
+    <string name="iv_star_on_item_rv">Étoile</string>
+
+    <!-- CreateArticleFragment Toast -->
+    <string name="title_length_error">Le titre ne doit pas dépasser 80 caractères.</string>
+    <string name="article_creation_success">Article créé avec succès.</string>
+    <string name="article_creation_failure">Échec de la création de l\'article.</string>
+    <string name="creation_unauthorized">Création non autorisée.</string>
+    <string name="unknown_error">Désolé, une erreur est survenue. Veuillez réessayer plus tard.</string>
+
+    <!-- DetailsArticleFragment Toast -->
+    <string name="error_retrieving_details">Désolé, une erreur est survenue. Veuillez réessayer plus tard.</string>
+    <string name="error_unexpected">Désolé, une erreur est survenue. Veuillez réessayer plus tard.</string>
+    <string name="error_on_favorite_status_change">Oups, une erreur est survenue. Veuillez réessayer plus tard.</string>
+    <string name="favorite_removed">L\'annonce a été retirée de vos favoris.</string>
+    <string name="favorite_added">L\'annonce a été ajoutée à vos favoris.</string>
+    <string name="favorite_status_unchanged">Statut de favori inchangé.</string>
+    <string name="parameter_error">Problème de paramètre.</string>
+    <string name="unauthorized_operation">Opération non autorisée.</string>
+
+    <!-- EditArticleFragment Toast -->
+    <string name="article_deleted_success">Article supprimé avec succès</string>
+    <string name="no_deletion">Pas de suppression</string>
+    <string name="parameter_problem">Problème de paramètre</string>
+    <string name="unauthorized_deletion">Suppression non autorisée</string>
+    <string name="error_try_again">Désolé, une erreur est survenue. Veuillez réessayer plus tard.</string>
+    <string name="article_updated_success">Article mis à jour avec succès</string>
+    <string name="no_modification">Pas de modification</string>
+    <string name="ids_different">Les ID sont différents</string>
+    <string name="unauthorized_modification">Modification non autorisée</string>
+
+    <!-- LoginFragment Toast -->
+    <string name="login_success">Connexion réussie.</string>
+    <string name="authenticated_token_unchanged">Authentifié, mais le jeton est inchangé.</string>
+    <string name="user_unknown">Utilisateur inconnu.</string>
+    <string name="parameter_error_login">Problème de paramètre.</string>
+    <string name="error_unknown">Erreur inconnue.</string>
+    <string name="login_failed">Échec de la connexion.</string>
+    <string name="error_network">Problème de réseau. Veuillez réessayer.</string>
+
+    <!-- MainFragment Toast -->
+    <string name="error_try_again_main_fragment">Désolé, une erreur est survenue. Veuillez réessayer plus tard.</string>
+
+    <!-- RegisterFragment Toast -->
+    <string name="toast_success_register">Compte créé avec succès</string>
+    <string name="toast_login_already_used">Identifiant déjà utilisé</string>
+    <string name="toast_register_failure">Échec de la création du compte</string>
+    <string name="toast_parameter_error">Problème de paramètre</string>
+    <string name="toast_empty_response">Réponse vide ou corps nul</string>
+    <string name="toast_network_issue">Problème de connexion réseau</string>
+    <string name="toast_passwords_not_identical">Les mots de passe ne sont pas identiques</string>
+    <string name="error_try_again_register_fragment">Désolé, une erreur est survenue. Veuillez réessayer plus tard.</string>
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.creaArticle.CreaArticleFragment" >
+
+    <TextView
+        android:id="@+id/tv_titlePage_create_article_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/tv_titlePage_create_article_fragment"
+        android:textColor="#0099CC"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_title_crea_article_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:autofillHints="title"
+        android:backgroundTint="#B6B6B6"
+        android:ems="10"
+        android:hint="@string/et_title_crea_article_fragment"
+        android:inputType="text"
+        android:maxLength="80"
+        android:minHeight="48dp"
+        android:textColorHint="#0099CC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titlePage_create_article_fragment"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/tv_content_text_crea_article_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/et_content_text_crea_article_fragment"
+        android:textColor="#0099CC"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_title_crea_article_fragment" />
+
+    <EditText
+        android:id="@+id/et_content_crea_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:autofillHints="content"
+        android:backgroundTint="#B6B6B6"
+        android:inputType="textMultiLine"
+        android:minHeight="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content_text_crea_article_fragment"
+        tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+
+
+    <EditText
+        android:id="@+id/et_picture_crea_article_fragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:autofillHints="Picture"
+        android:backgroundTint="#B6B6B6"
+        android:ems="10"
+        android:hint="@string/et_picture_crea_article_fragment"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#0099CC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_content_crea_fragment"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <ImageView
+        android:id="@+id/iv_crea_article_fragment"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/feedarticles_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_picture_crea_article_fragment"
+        android:contentDescription="@string/iv_crea_article_fragment" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_crea_article_fragment">
+
+        <RadioButton
+            android:id="@+id/rb_sport_crea_article_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_sport_crea_article_fragment"
+            app:layout_constraintStart_toEndOf="@+id/radioButton4" />
+
+        <RadioButton
+            android:id="@+id/rb_manga_crea_article_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_manga_crea_article_fragment"
+            app:layout_constraintStart_toEndOf="@+id/radioButton5" />
+
+        <RadioButton
+            android:id="@+id/rb_diverse_crea_article_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rb_diverse_crea_article_fragment"
+            app:layout_constraintStart_toEndOf="@+id/radioButton6" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_submit_crea_article_activity"
+        style="@style/CustomMaterialButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:paddingStart="46dp"
+        android:paddingEnd="46dp"
+        android:text="@string/btn_submit_crea_article_activity"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:ignore="VisualLintButtonSize" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">FeedArticlesJetpack</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_titlePage_details_article_fragment">Product details</string>
+    <string name="tv_create_text_details_article_fragment">Created on </string>
+    <string name="iv_star_details_article_fragment">star</string>
+    <string name="tv_category_text_details_article_fragment">Category:</string>
+    <string name="iv_details_article_fragment">url</string>
+    <string name="btn_back_details_article_fragment">Back</string>
+    <string name="tv_titlePage_create_article_fragment">New Article</string>
+    <string name="et_title_crea_article_fragment">Title</string>
+    <string name="et_content_text_crea_article_fragment">Content</string>
+    <string name="et_picture_crea_article_fragment">Image URL</string>
+    <string name="iv_crea_article_fragment">Feed Articles Logo</string>
+    <string name="rb_sport_crea_article_fragment">Sport</string>
+    <string name="rb_manga_crea_article_fragment">Manga</string>
+    <string name="rb_diverse_crea_article_fragment">Diverse</string>
+    <string name="btn_submit_crea_article_activity">Submit</string>
+    <string name="tv_titlePage_edit_fragment">Edit Article</string>
+    <string name="et_url_edit_fragment">Picture URL</string>
+    <string name="iv_edit_fragment">Feed Articles Logo</string>
+    <string name="rb_sport_edit_fragment">Sport</string>
+    <string name="rb_manga_edit_fragment">Manga</string>
+    <string name="rb_diverse_edit_fragment">Diverse</string>
+    <string name="btn_delete_edit_fragment">Delete</string>
+    <string name="btn_submit_edit_fragment">Update</string>
+    <string name="tv_titlePage_login_fragment">Log in</string>
+    <string name="et_login_login_fragment">Login</string>
+    <string name="et_password_login_fragment">Password</string>
+    <string name="btn_submit_login_fragment">Log in</string>
+    <string name="tv_register_login_fragment">Don\'t have an account ? Sign up !</string>
+    <string name="iv_add_main_fragment">Add</string>
+    <string name="iv_star_main_fragment">Star</string>
+    <string name="iv_logout_main_fragment">Logout</string>
+    <string name="rb_all_main_fragment">All</string>
+    <string name="rb_sport_main_fragment">Sport</string>
+    <string name="rb_manga_main_fragment">Manga</string>
+    <string name="rb_diverse_main_fragment">Diverse</string>
+    <string name="tv_titlePage_register_fragment">Create a New Account</string>
+    <string name="et_login_register_fragment">Login</string>
+    <string name="et_password_register_fragment">Password</string>
+    <string name="et_confirm_password_register_fragment">Confirm Password</string>
+    <string name="btn_submit_register_fragment">Register</string>
+    <string name="iv_splash_fragment">Feed Articles Logo</string>
+    <string name="tv_title_splash_fragment">Feed Articles</string>
+    <string name="picture_item_rv">Announcement Picture</string>
+    <string name="iv_star_on_item_rv">Star</string>
+
+    <!-- CreateArticleFragment Toast -->
+    <string name="title_length_error">The title must not exceed 80 characters.</string>
+    <string name="article_creation_success">Article created successfully.</string>
+    <string name="article_creation_failure">Failed to create the article.</string>
+    <string name="creation_unauthorized">Unauthorized creation.</string>
+    <string name="unknown_error">Sorry, an error occurred. Please try again later.</string>
+
+    <!-- DetailsArticleFragment Toast -->
+    <string name="error_retrieving_details">Sorry, an error occurred. Please try again later.</string>
+    <string name="error_unexpected">Sorry, an error occurred. Please try again later.</string>
+    <string name="error_on_favorite_status_change">Oops, an error occurred. Please try again later.</string>
+    <string name="favorite_removed">The announcement has been removed from your favorites.</string>
+    <string name="favorite_added">The announcement has been added to your favorites.</string>
+    <string name="favorite_status_unchanged">Favorite status unchanged.</string>
+    <string name="parameter_error">Parameter problem.</string>
+    <string name="unauthorized_operation">Unauthorized operation.</string>
+
+    <!-- EditArticleFragment Toast -->
+    <string name="article_deleted_success">Article deleted successfully</string>
+    <string name="no_deletion">No deletion</string>
+    <string name="parameter_problem">Parameter problem</string>
+    <string name="unauthorized_deletion">Unauthorized deletion</string>
+    <string name="error_try_again">Sorry, an error occurred. Please try again later.</string>
+    <string name="article_updated_success">Article updated successfully</string>
+    <string name="no_modification">No modification</string>
+    <string name="ids_different">IDs are different</string>
+    <string name="unauthorized_modification">Unauthorized modification</string>
+
+    <!-- LoginFragment Toast -->
+    <string name="login_success">Login successful.</string>
+    <string name="authenticated_token_unchanged">Authenticated, but token unchanged.</string>
+    <string name="user_unknown">Unknown user.</string>
+    <string name="parameter_error_login">Parameter problem.</string>
+    <string name="error_unknown">Unknown error.</string>
+    <string name="login_failed">Login failed.</string>
+    <string name="error_network">Network problem. Please try again.</string>
+
+    <!-- MainFragment Toast -->
+    <string name="error_try_again_main_fragment">Sorry, an error occurred. Please try again later.</string>
+
+    <!-- RegisterFragment Toast -->
+    <string name="toast_success_register">Account created successfully</string>
+    <string name="toast_login_already_used">Login already in use</string>
+    <string name="toast_register_failure">Failed to create the account</string>
+    <string name="toast_parameter_error">Parameter problem</string>
+    <string name="toast_empty_response">Empty response or null body</string>
+    <string name="toast_network_issue">Network connection problem</string>
+    <string name="toast_passwords_not_identical">Passwords are not identical</string>
+    <string name="error_try_again_register_fragment">Sorry, an error occurred. Please try again later.</string>
+</resources>

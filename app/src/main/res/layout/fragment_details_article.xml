@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.feedarticlesjetpack.ui.detailsArticle.DetailsArticleViewModel" />
+        <variable
+            name="article"
+            type="com.example.feedarticlesjetpack.network.ArticleDto" />
+        <variable
+            name="fragment"
+            type="com.example.feedarticlesjetpack.ui.detailsArticle.DetailsArticleFragment" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.detailsArticle.DetailsArticleFragment" >
+
+        <TextView
+            android:id="@+id/tv_titlePage_details_article_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/tv_titlePage_details_article_fragment"
+            android:textColor="#0099CC"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_star_details_article_fragment"
+            android:layout_width="wrap_content"
+            android:src="@{article.is_fav == 1 ? @android:drawable/btn_star_big_on : @android:drawable/btn_star_big_off}"
+            android:onClick="@{() -> fragment.onStarClicked()}"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_titlePage_details_article_fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_titlePage_details_article_fragment"
+            android:contentDescription="@string/iv_star_details_article_fragment" />
+
+        <TextView
+            android:id="@+id/tv_create_text_details_article_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="70dp"
+            android:text="@string/tv_create_text_details_article_fragment"
+            android:textColor="#0099CC"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_titlePage_details_article_fragment" />
+
+        <TextView
+            android:id="@+id/tv_category_details_article_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="@{fragment.getCategoryName(article.categorie)}"
+            android:textColor="#0099CC"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_create_text_details_article_fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_create_text_details_article_fragment" />
+
+        <TextView
+            android:id="@+id/tv_date_details_article_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{fragment.formatDate(article.created_at)}"
+            android:textColor="#0099CC"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_create_text_details_article_fragment"
+            app:layout_constraintStart_toEndOf="@+id/tv_create_text_details_article_fragment"
+            app:layout_constraintTop_toTopOf="@+id/tv_create_text_details_article_fragment" />
+
+        <TextView
+            android:id="@+id/tv_category_text_details_article_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_category_text_details_article_fragment"
+            android:textColor="#0099CC"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_category_details_article_fragment"
+            app:layout_constraintEnd_toStartOf="@+id/tv_category_details_article_fragment"
+            app:layout_constraintTop_toTopOf="@+id/tv_category_details_article_fragment" />
+
+        <TextView
+            android:id="@+id/tv_title_details_article_fragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:text="@{article.titre}"
+            android:textColor="#0099CC"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_create_text_details_article_fragment" />
+
+        <ImageView
+            android:id="@+id/iv_details_article_fragment"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="60dp"
+            app:imageUrl="@{article.url_image}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_details_article_fragment"
+            android:contentDescription="@string/iv_details_article_fragment" />
+
+
+        <TextView
+            android:id="@+id/tv_content_details_article_fragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="20dp"
+            android:text="@{article.descriptif}"
+            android:textColor="#0099CC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_details_article_fragment" />
+
+        <Button
+            android:id="@+id/btn_back_details_article_fragment"
+            android:onClick="@{() -> fragment.onBackClicked()}"
+            style="@style/CustomMaterialButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/btn_back_details_article_fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_content_details_article_fragment"
+            tools:ignore="VisualLintButtonSize" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
